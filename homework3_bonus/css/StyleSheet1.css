@@ -1,0 +1,96 @@
+﻿body{
+    background-color:black;
+}
+.conteiner{
+    margin: 0 auto;
+    padding: 60px 65px 30px;
+    width: 830px;
+    height: 793px;
+    background: url(../img/background.jpg) no-repeat #000000;
+    background-size: 100%;
+}
+
+/*Header logo*/
+header{
+    height: 147px;
+}
+header figure{
+    display: inline-block;
+    position: relative;
+    width: 263px;
+    height: 147px;
+    margin-right: 450px;
+}
+header figure .logo{
+    display: block;
+    position: absolute;
+    margin: 75px auto 0;
+}
+header figure .palma{
+    position: absolute;
+    left: 140px;
+}
+header figure figcaption{
+    display: block;
+    position: relative;
+    top: 110px;
+    left: 82px;
+    margin: 0 auto;
+    color: #e6e6e6;
+    font-size: 11px;
+    font-family: Tahoma;
+}
+/*Header contacts*/
+header .contacts{
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    margin-bottom: 16px;
+    color: #e6e6e6;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: 500;
+}
+header .contacts .us{
+    padding-bottom: 3px;
+}
+header .contacts .contact{
+    font-size: 8.5px;
+}
+
+/*Content*/
+.list .item{
+    display: inline-block;
+    float: left;
+    margin-bottom: 35px;
+    margin-right: 6px;
+}
+.list .item div{
+    width: 270px;
+    height: 188px;
+    background: url(../img/ramka.png) no-repeat;
+    background-size: contain;
+}
+.list .item div img{
+    width: 258px;
+    height: 175px;
+    margin: 6px;
+}
+.list .item p{
+    vertical-align: top;
+    text-align: center;
+    color: #e6e6e6;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+/*Footer*/
+footer{
+    display: inline-block;
+    position: relative;
+    top: 130px;
+    left: 330px;
+    color: #e6e6e6;
+    font-family: Tahoma;
+    font-size: 10px;
+}
