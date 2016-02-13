@@ -21,6 +21,7 @@ body{
 nav{
     margin: 40px auto;
     height: 40px;
+	padding-left: 2px;
     background: linear-gradient(#5e5e5e, #444343);
     background: -webkit-linear-gradient(#5e5e5e, #444343);
     background: -moz-linear-gradient(#5e5e5e, #444343);
@@ -44,7 +45,7 @@ nav{
     font-family: MyriadPro;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.menu .selected{
+.menu li a:hover{
     border-style: solid;
     border-width: 0 1px;
     border-color: #838383;
@@ -78,12 +79,12 @@ aside ul li a{
     font-size: 14px;
     font-family: MyriadPro;
 }
-aside ul .selected{
+aside ul li:hover{
     width: auto;
     padding-left: 36px;
     background-color: #f9f9f9;    
 }
-aside ul .selected a{
+aside ul li:hover a{
     color: #2c2c2c;
 }
 
@@ -131,7 +132,7 @@ footer li a{
     font-size: 15px;
     font-family: MyriadPro;
 }
-footer li .selected{
+footer li:hover{
     text-decoration: underline;
 }
 footer p{
