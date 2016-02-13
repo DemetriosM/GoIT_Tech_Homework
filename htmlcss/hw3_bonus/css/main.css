@@ -22,11 +22,10 @@ header figure{
     margin-right: 450px;
 }
 header figure .logo{
-    display: block;
     position: absolute;
     margin: 75px auto 0;
 }
-header figure .palma{
+header figure .palm_tree{
     position: absolute;
     left: 140px;
 }
@@ -60,7 +59,6 @@ header .contacts .contact{
 
 /*Content*/
 .list .item{
-    display: inline-block;
     float: left;
     margin-bottom: 35px;
     margin-right: 6px;
