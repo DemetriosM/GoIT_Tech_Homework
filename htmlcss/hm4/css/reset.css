@@ -1,0 +1,24 @@
+﻿body, 
+div, 
+header,
+footer,  
+p,
+h4,
+ul, 
+li, 
+a, 
+img{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+p,
+a{
+    font-family: Tahoma;
+}
