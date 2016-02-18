@@ -1,0 +1,214 @@
+﻿@font-fase{
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Reset*/
+body,
+nav,
+div,
+h4,
+p,
+ul,
+li,
+a,
+img,
+hr,
+input{
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    border: 0;
+    font-family: "Helvetica Neue", Tahoma, sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    cursor: default;
+}
+body{
+    background-color: #000000;
+}
+input{
+  outline: none;
+}
+
+/*Navigation*/
+nav{
+  margin: 0 auto;
+  padding-right: 10px;
+  width: 1205px;
+  height: 36px;
+  background-color: #074f8f;
+}
+nav ul{
+  float: right;
+  margin: 0 10px 0 5px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  display: block;
+  padding: 0 12px;
+  line-height: 35px;
+  border-top: 0;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-size: 14px;
+}
+nav .first-menu li a{
+  color: #60b5ed;
+}
+nav .first-menu li a:hover{
+  background-color: #4eabda;
+  color: #ffffff;
+}
+nav .v-line{
+  float: right;
+  margin-top: 2px;
+  width: 1px;
+  height: 31px;
+}
+nav .second-menu li a{
+  color: #ffffff;
+}
+nav .second-menu li a img{
+  padding: 0 5px 0 0;
+  width: 21px;
+  height: 23px;
+  vertical-align: middle;
+}
+nav .second-menu li a:hover{
+  background: -moz-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  background: -webkit-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  background: -o-linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  background: linear-gradient(rgb(66,153,210) 20%, rgb(0,115,190));
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: rgb(66,153,210);
+}
+
+/*Content*/
+.container{
+  margin: 0 auto;
+  padding-top: 213px;
+  padding-left: 353px;
+  width: 862px;
+  height: 814px;
+  background: url('../img/background2.jpg') no-repeat;
+  background-size: contain;
+}
+
+/*Form*/
+.for-form{
+  width: 560px;
+  height: 613px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.for-form h4{
+  text-align: center;
+  line-height: 62px;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 24px;
+}
+.for-form hr{
+  height: 2px;
+  background-color: #d7d7d7;
+}
+.for-form form{
+  padding-top: 36px;
+}
+.for-form form .ou{
+  display: block;
+  margin: 31px auto;
+}
+.for-form form div{
+  margin-bottom: 16px;
+  text-align: center;
+}
+.for-form #login-fasebook{
+  width: 276px;
+  height: 35px;
+  background: url(../img/login_f.png);
+  cursor: pointer;
+}
+.for-form form div #first_name,
+.for-form form div #last_name,
+.for-form form div #email,
+.for-form form div #password,
+.for-form form div #p_confirm{
+  padding-left: 19px;
+  width: 257px;
+  height: 35px;
+  color: #cccccc;
+  background: -moz-linear-gradient(#0e0d0d, #111111);
+  background: -webkit-linear-gradient(#0e0d0d, #111111);
+  background: -o-linear-gradient(#0e0d0d, #111111);
+  background: linear-gradient(#0e0d0d, #111111);
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.1);
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #4b4b4b;
+}
+.for-form form div #first_name:focus,
+.for-form form div #last_name:focus,
+.for-form form div #email:focus,
+.for-form form div #password:focus,
+.for-form form div #p_confirm:focus{
+  color: #cccccc;
+  background: #1b5288;
+  border-bottom: 1px solid #4299d2;
+  box-shadow: 0px 0px 9px 5px rgba(47,123,197,0.77);
+}
+.for-form form div #updates{
+  position: relative;
+  left: -25px;
+  top: 3px;
+  color: #cccccc;
+  height: 15px;
+  cursor: pointer;
+}
+.for-form form div label{
+  position: relative;
+  left: -22px;
+  color: #cccccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+.for-form form div #ok{
+  width: 149px;
+  height: 35px;
+  color: #ffffff;
+  background: -moz-linear-gradient(#65a8e4, #2381be);
+  background: -webkit-linear-gradient(#65a8e4, #2381be);
+  background: -o-linear-gradient(#65a8e4, #2381be);
+  background: linear-gradient(#65a8e4, #2381be);
+  border: 1px solid #5da2df;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.for-form form p{
+  margin: 0 auto;
+  width: 310px;
+  color: #cccccc;
+  text-align: center;
+  font-size: 11px;
+}
