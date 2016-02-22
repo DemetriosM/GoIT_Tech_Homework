@@ -1,0 +1,677 @@
+/*Reset*/
+body, header, nav, aside,
+main, section, figure, figcaption,
+footer, div, span, h5, h6, p, ul,
+li, a, img, form, input, select,
+label{
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    border: 0;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    cursor: default;
+}
+body{
+    background-color: #ffffff;
+}
+input{
+  outline: none;
+}
+
+/*Body*/
+html{
+  background-color: #000000;
+}
+body{
+  margin: 0 auto;
+  padding: 18px 46px 0 45px;
+  width: 908px;
+  height: 1292px;
+}
+
+
+/*Header*/
+header .phone{
+  float: left;
+  margin: 4px 0 0 6px;
+}
+header .phone h5{
+  display: inline-block;
+  line-height: 28px;
+  vertical-align: top;
+  color: #5e696d;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+header .registration{
+  float: right;
+  width: 495px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: #114165;
+  background: -webkit-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -moz-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -o-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  -webkit-box-shadow: 2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  -moz-box-shadow:    2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  box-shadow:         2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  cursor: default;
+}
+header .registration img{
+  float: left;
+  margin: 5px 0 0 7px;
+}
+header .registration #login,
+header .registration #password{
+  float: left;
+  margin: 4px;
+  padding-left: 4px;
+  width: 108px;
+  height: 15px;
+  line-height: 12px;
+  border: 1px solid #9ba1a3;
+  background-color: #ffffff;
+  color: #97a2a6;
+  font-size: 11px;
+}
+header .registration #entry{
+  margin: 0 5px 0 2px;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 11px;
+  cursor: pointer;
+}
+header .registration #recover_password{
+  margin-left: 7px;
+  vertical-align: middle;
+  line-height: 14px;
+  background-color: transparent;
+  color: #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  font-size: 12px;
+  cursor: pointer;
+}
+header .navigate_shadow{
+  float: right;
+  margin: -5px 1px 0 13px;
+  width: 85px;
+  height: 33px;
+  background-image: url(../img/shadow.png);
+  background-size: cover;
+}
+header .navigate_shadow .navigate{
+  margin: 6px auto;
+  padding: 2px 9px 6px;
+  width: 56px;
+  height: 11px;
+  background-color: #ffffff;
+  border: 1px solid #bdc4c7;
+  border-radius: 10px;
+}
+header .navigate_shadow .navigate a{
+  float: left;
+  vertical-align: bottom;
+  z-index: 1;
+}
+header .navigate_shadow .navigate .home{
+  margin-right: 7px;
+}
+header .navigate_shadow .navigate .map{
+  padding-right: 9px;
+  padding-top: 1px;
+}
+header .navigate_shadow .navigate .letter{
+  padding-top: 2px;
+}
+header .navigate_shadow .navigate a img{
+  display: block;
+}
+header .header_image{
+  margin: 4px 0 -1px;
+  width: 909px;
+  height: 237px;
+  clear: both;
+}
+
+
+/*Navigation*/
+nav {
+  width: 768px;
+  height: 29px;
+  padding: 2px 16px 0 125px;
+  border: 1px solid #0d1642;
+  border-radius: 3px;
+  background-color: #114165;
+  background: -webkit-linear-gradient(rgba(87, 96, 104, 1), rgba(46, 49, 52, 1) 13%, rgba(0, 0, 0, 1));
+  background: -moz-linear-gradient(rgba(87, 96, 104, 1), rgba(46, 49, 52, 1) 13%, rgba(0, 0, 0, 1));
+  background: -o-linear-gradient(rgba(87, 96, 104, 1), rgba(46, 49, 52, 1) 13%, rgba(0, 0, 0, 1));
+  background: linear-gradient(rgba(87, 96, 104, 1), rgba(46, 49, 52, 1) 13%, rgba(0, 0, 0, 1));
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    2px 3px 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow:         2px 3px 5px 0 rgba(0, 0, 0, 0.75);
+}
+nav .menu{
+  float: left;
+}
+nav .menu li{
+  display: inline-block;
+}
+nav .menu li a{
+  display: block;
+  padding: 2px 13px 0;
+  height: 24px;
+  line-height: 24px;
+  color: #b1bcc0;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+nav .menu li .company{
+  padding: 2px 17px 0 21px;
+}
+nav .menu li .payment{
+  padding: 2px 10px 0;
+}
+nav .menu li .delivery{
+  padding: 2px 19px 0;
+}
+nav .menu li a:hover{
+  border-radius: 12px;
+  background-color: #114165;
+  background: -webkit-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -moz-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -o-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  color: #ffffff;
+}
+nav .number_things{
+  float: right;
+  cursor: default;
+}
+nav .number_things img{
+  float: left;
+  margin: 4px 7px 0 0;
+}
+nav .total_cost{
+  float: right;
+  margin-left: 22px;
+  cursor: default;
+}
+nav .text{
+  line-height: 27px;
+  color: #929b9f;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+nav .value{
+  line-height: 27px;
+  color: #0d5a8f;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+
+/*Search forms*/
+/*Search forms - common to all*/
+section{
+  cursor: default;
+}
+section h5{
+  margin-top: -2px;
+  text-align: center;
+  color: #154467;
+  font-family: "Arial Black", sans-serif;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+section form div div{
+  margin-top: -3px;
+}
+section form div h6{
+  color: #154468;
+  font-family: "Arial Black", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+}
+section form div p{
+  display: inline-block;
+  margin-bottom: 3px;
+  width: 71px;
+  vertical-align: bottom;
+  line-height: 7px;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+section form div p span{
+  color: #77858b;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+section form div select{
+  width: 101px;
+  height: 17px;
+  border: 0;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: url(../img/arrow.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    inset 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow:         inset 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+section form div select::-ms-expand {
+  display: none;
+}
+
+/*Search forms - search_by_car*/
+section form div:nth-child(4) select{
+  width: 58px;
+}
+.search_by_car{
+  position: relative;
+  float: left;
+  width: 413px;
+  height: 132px;
+  margin: 13px 0 0 4px;
+  background-color: #ffffff;
+  border: 1px solid #9c9c9d;
+  border-radius: 17px;
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  -moz-box-shadow:    2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  box-shadow:         2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+}
+.search_by_car .disks{
+  position: absolute;
+  top: 3px;
+  left: 18px;
+}
+.search_by_car .tires{
+  position: absolute;
+  top: 2px;
+  right: 16px;
+}
+.search_by_car .tires h6{
+  margin-right: 6px;
+  text-align: right;
+}
+.search_by_car .tires input[type=submit]/*to search_by_car*/,
+.search_tires input[type=submit]/*to search_tires*/,
+.search_disks input[type=submit]/*to search_disks*/{
+  float: right;
+  margin: 3px 7px 0 0;
+  background-color: #ffffff;
+  color: #154467;
+  border-bottom: 1px solid rgba(21, 68, 103, 0.5);
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/*Search forms - search_tires*/
+.search_tires{
+  float: right;
+  width: 181px;
+  height: 132px;
+  margin: 12px 0 0;
+  padding: 1px 0 0 11px;
+  background-color: #ffffff;
+  border: 1px solid #9c9c9d;
+  border-radius: 17px;
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  -moz-box-shadow:    2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  box-shadow:         2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+}
+.search_tires h5{
+  text-align: left;
+}
+.search_tires form div p{
+  width: 40px;
+  margin-right: 3px;
+  text-align: right;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+.search_tires form div span{
+  vertical-align: bottom;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.search_tires form div .season{
+  margin-top: 5px;
+  vertical-align: top;
+}
+.search_tires form div select{
+  width: 52px;
+}
+.search_tires form div div{
+  display: inline-block;
+  margin-top: 5px;
+  width: 55px;
+  line-height: 12px;
+  font-size: 12px;
+}
+.search_tires form div div input[type=checkbox]{
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+.search_tires form div div label{
+  vertical-align: top;
+  cursor: pointer;
+}
+.search_tires input[type=submit]{
+  margin: -7px 21px 0 0;
+}
+
+/*Search forms - search_disks*/
+.search_disks{
+  position: relative;
+  float: right;
+  margin: 12px 4px 0 10px;
+  width: 266px;
+  height: 133px;
+  background-color: #ffffff;
+  border: 1px solid #9c9c9d;
+  border-radius: 17px;
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  -moz-box-shadow:    2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+  box-shadow:         2px 3px 5px 0 rgba(104, 104, 104, 0.75);
+}
+.search_disks h5{
+  margin: 0 0 0 8px;
+  text-align: left;
+}
+.search_disks form div select{
+  width: 57px;
+}
+.search_disks .disk_diameter{
+  position: absolute;
+  top: 14px;
+  left: 11px;
+}
+.search_disks .disk_diameter div{
+  margin: 0 0 0 4px;
+}
+.search_disks .disk_diameter div:last-child p{
+  margin-top: -2px;
+  vertical-align: middle;
+}
+.search_disks .disk_diameter p{
+  width: 86px;
+  line-height: 10px;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.search_disks .disk_diameter p span{
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: normal;
+}
+.search_disks img{
+  position: absolute;
+  top: 5px;
+  right: 90px;
+}
+.search_disks .hole_diameter{
+  position: absolute;
+  top: 7px;
+  right: 17px;
+  width: 64px;
+}
+.search_disks .hole_diameter div{
+  margin: 1px 1px -7px 1px;
+}
+.search_disks .hole_diameter p{
+  margin-bottom: -4px;
+  width: 58px;
+  line-height: 8px;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 9px;
+}
+.search_disks .hole_diameter p span{
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 8px;
+}
+.search_disks input[type=submit]{
+  margin: 10px 3px 0 0;
+}
+
+
+/*Content*/
+/*Catalog (left)*/
+aside{
+  padding: 18px 0 0;
+  float: left;
+  clear: both;
+}
+aside ul .list div{
+  margin-bottom: 12px;
+  padding: 1px 1px 2px;
+  width: 178px;
+  height: 23px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  -webkit-box-shadow: 2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  -moz-box-shadow:    2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  box-shadow:         2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+}
+aside ul .tires div,
+aside ul .disks div,
+aside ul .bolts div{
+  margin: 0 0 0 1px;
+  padding: 1px 1px 3px 4px;
+  height: 22px;
+  width: 143px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+}
+aside ul li div img{
+  display: block;
+  float: left;
+  margin-right: 3px;
+}
+aside ul li div span{
+  line-height: 26px;
+  color: #114165;
+  font-size: 14px;
+}
+aside ul .list div span{
+  font-size: 0.8em;
+}
+aside ul li ul li{
+  margin: 0 0 0 55px;
+  list-style-type: circle;
+}
+aside ul li ul li a{
+  margin-left: -8px;
+  line-height: 15px;
+  color: #465961;
+  font-size: 0.79em;
+  cursor: pointer;
+}
+aside ul li ul li a:hover{
+  color: #0c3256;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline;
+}
+/*Brands (right)*/
+.brands_form{
+  float: right;
+  padding: 16px 0 0 0;
+}
+.brands_form ul .brands div{
+  padding: 1px 1px 2px 2px;
+  margin-bottom: 14px;
+  width: 176px;
+  height: 23px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+  -webkit-box-shadow: 2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  -moz-box-shadow:    2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+  box-shadow:         2px 3px 3px 0 rgba(150, 150, 150, 0.75);
+}
+.brands_form ul .tires div,
+.brands_form ul .disks div{
+  margin: 0 0 0 14px;
+  padding: 1px 1px 3px 4px;
+  height: 22px;
+  width: 129px;
+  border: 1px solid #79878d;
+  border-radius: 12px;
+}
+.brands_form ul .tires{
+  margin-bottom: 10px;
+}
+.brands_form ul .disks div{
+  margin-bottom: 7px;
+}
+.brands_form ul li div img{
+  display: block;
+  float: left;
+  margin-right: 4px;
+}
+.brands_form ul li div span{
+  line-height: 26px;
+  color: #114165;
+  font-size: 14px;
+}
+.brands_form ul li ul li{
+  margin: 4px 0 0 25px;
+  line-height: 21px;
+  color: #465961;
+  font-size: 0.79em;
+}
+.brands_form ul li ul li input{
+  float: left;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.brands_form ul li ul li label{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.brands_form #ok{
+  margin: 17px 0 0 25px;
+  width: 78px;
+  height: 24px;
+  border-radius: 10px;
+  border: 1px solid #a7abae;
+  background-color: #114165;
+  background: -webkit-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -moz-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: -o-linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  background: linear-gradient(rgba(32, 105, 136, 1), rgba(17, 65, 101, 1) 59%, rgba(12, 50, 86, 1));
+  color: #e5e9ea;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  -webkit-box-shadow: 2px 3px 2px 0 rgba(150, 150, 150, 0.4);
+  -moz-box-shadow:    2px 3px 2px 0 rgba(150, 150, 150, 0.4);
+  box-shadow:         2px 3px 2px 0 rgba(150, 150, 150, 0.4);
+  cursor: pointer;
+}
+/*Goods (center)*/
+main{
+  float: right;
+  margin: 16px 10px 0 0;
+  width: 527px;
+  height: 628px;
+  background-color: #98acb2;
+  background: -webkit-linear-gradient(rgba(201, 207, 209, 0.49), rgba(35, 75, 93, 0.49));
+  background: -moz-linear-gradient(rgba(201, 207, 209, 0.49), rgba(35, 75, 93, 0.49));
+  background: -o-linear-gradient(rgba(201, 207, 209, 0.49), rgba(35, 75, 93, 0.49));
+  background: linear-gradient(rgba(201, 207, 209, 0.49), rgba(35, 75, 93, 0.49));
+}
+main section{
+  float: left;
+  margin: 12px 5px 15px 24px;
+  width: 138px;
+}
+main section h5{
+  line-height: 23px;
+  color: #206988;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 1em;
+}
+main section p{
+  line-height: 9px;
+  color: #1f2528;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 0.8em;
+}
+main section figure figcaption{
+  margin-left: 16px;
+  line-height: 9px;
+  color: #114165;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*Footer*/
+footer{
+  clear: both;
+}
+footer .brand_logo{
+  padding: 36px 0 25px 5px;
+  text-align: center;
+}
+footer .brand_logo img{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+footer .footer{
+  height: 99px;
+  border: 1px solid #242a3c;
+  background-color: #213a4d;
+}
+footer .footer .nav ul{
+  text-align: center;
+  margin: 4px 0 10px 7px;
+}
+footer .footer .nav ul li{
+  display: inline-block;
+}
+footer .footer .nav ul li a{
+  padding: 0 12px 0 9px;
+  color: #bec6c9;
+  border-right: 1px solid #bec6c9;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+footer .footer .nav ul li:last-child a{
+  border: 0;
+}
+footer .footer .nav ul li a:hover{
+  color: #52abcb;
+}
+footer .footer p{
+  text-align: center;
+  color: #7f4740;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
