@@ -573,7 +573,7 @@ header {
 
 /*Responsive*/
 /*768px*/
-@media (max-width: 815px){
+@media (max-width: 815px), (max-device-width: 815px){
   .conteiner{
     max-width: 728px;
   }
@@ -786,7 +786,7 @@ header {
   }
 }
 
-@media (max-width: 735px){
+@media (max-width: 735px),(max-device-width: 735px){
   .conteiner{
     max-width: 440px;
     overflow: visible;
@@ -1056,7 +1056,7 @@ header {
   }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px), (max-device-width: 450px){
   .conteiner{
     max-width: 320px;
   }
