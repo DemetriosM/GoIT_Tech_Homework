@@ -1049,6 +1049,9 @@ header {
   .menu__item--footer{
     margin-left: 13px;
   }
+  .menu__item--footer:last-child{
+	margin-right: -30px;
+  }
   .nav_f p{
     float: none;
     margin: 93px 0 0;
