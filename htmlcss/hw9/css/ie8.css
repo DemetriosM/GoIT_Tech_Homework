@@ -1,0 +1,24 @@
+html{
+	min-width: 960px;
+}
+/*Header*/
+.slider__controls label {
+    background: #767575;
+}
+.slider__controls label:first-child{
+    background: #ffffff;
+}
+.slide__img .play:hover{
+    background: transparent;
+}
+/*Content*/
+.bg_info{ /*gradient*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#745083', endColorstr='#322539')";
+}
+
+.slider__controls--content label {
+    background: #ffffff;
+}
+.slider__controls--content label:first-child{
+    background: #767575;
+}
