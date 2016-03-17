@@ -1,0 +1,135 @@
+body {
+  height: 100%;
+  min-width: 310px;
+  background-color: #000;
+}
+h2{
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  cursor: default;
+}
+.timer{
+  margin: 30px auto 20px;
+  height: 106px;
+  max-width: 700px;
+  border: 1px solid #c7c9f1;
+  border-radius: 4px;
+  background-color: rgb(49, 68, 155);
+  color: #000000;
+  line-height: 104px;
+  text-align: center;
+  font-size: 92px;
+  -webkit-box-shadow: 0 0 10px 0 #31449b;
+  -moz-box-shadow:    0 0 10px 0 #31449b;
+  box-shadow:         0 0 10px 0 #31449b;
+  cursor: default;
+}
+.hh{
+  display: inline-block;
+  width: 95px;
+}
+.mm, .sc{
+  display: inline-block;
+  width: 120px;
+}
+.msc{
+  display: inline-block;
+  width: 170px;
+}
+.btn{
+  margin-right: 10px;
+  border: 1px solid #2b333b;
+  border-top: 1px solid #5681b9;
+  background: #586878;
+  background: -moz-linear-gradient(#5681b9,#586878 30%,#1b1b1b);
+  background: -webkit-linear-gradient(#5681b9,#586878 30%,#1b1b1b);
+  background: linear-gradient(#5681b9,#586878 30%,#1b1b1b);
+  -webkit-box-shadow: 0 0 1px 0 rgb(0, 0, 0);
+  -moz-box-shadow:    0 0 1px 0 rgb(0, 0, 0);
+  box-shadow:         0 0 1px 0 rgb(0, 0, 0);
+  color: #ffffff; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+}
+.btn:active{
+  background: #627da0;
+  background: -moz-linear-gradient(#5681b9, #586878 40%,#586878 60%,#35343b);
+  background: -webkit-linear-gradient(#5681b9, #586878 40%,#586878 60%,#35343b);
+  background: linear-gradient(#5681b9, #586878 40%,#586878 60%,#35343b);
+}
+.btn:hover,
+.btn:focus{
+  color: #fff;
+  outline-color:transparent;
+  -webkit-box-shadow: 0 0 3px 0 #fff;
+  -moz-box-shadow:    0 0 3px 0 #fff;
+  box-shadow:         0 0 3px 0 #fff;
+}
+.list{
+  margin: 30px auto;
+  max-width: 680px;
+  min-height: 430px;
+  background: #000 url(../img/stopwatch.jpg) center top no-repeat;
+  background-size: 400px;
+}
+.list li{
+  font-size: 50px;
+}
+.list-group-item-danger{
+  color: #000;
+  background-color:rgba(189, 138, 138, 0.9);
+}
+.list-group-item-info{
+  color: #000;
+  background-color: rgba(70, 167, 216, 0.9);
+}
+
+@media (max-width: 600px){
+  .timer{
+    height: 82px;
+    line-height: 80px;
+    font-size: 68px;
+  }
+  .hh{
+    width: 70px;
+  }
+  .mm, 
+  .sc{
+    width: 88px;
+  }
+  .msc{
+    width: 125px;
+  }
+  .list{
+    margin: 20px 0;
+  }
+  .list li{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 470px){
+  .timer{
+    height: 53px;
+    line-height: 51px;
+    font-size: 45px;
+  }
+  .hh{
+    width: 46px;
+  }
+  .mm, 
+  .sc{
+    width: 59px;
+  }
+  .msc{
+    width: 80px;
+  }
+  .list{
+    margin: 10px 0;
+	min-height: 360px;
+    background-size: 340px;
+  }
+  .list li{
+    font-size: 24px;
+  }
+}
