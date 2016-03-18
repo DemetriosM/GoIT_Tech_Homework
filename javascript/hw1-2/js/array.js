@@ -4,10 +4,13 @@ var userName = '';
 alert('Введите 5 имен');
 for (var i = 1; i <= 5; i++) {
   var str = 'Введите любое имя ' + i;
-  names[i] = prompt(str, '').toLowerCase();
+  names[i] = prompt(str, '');
+  if (names[i]) {
+	  names[i] = names[i].toLowerCase();
+  }
 }
 
-userName = prompt('Введите ваше имя', '');
+userName = prompt('Введите ваше имя', '') || '';
 if (authentication(userName)) {
   var str = userName + ', вы успешно вошли';
   alert(str);
@@ -17,6 +20,6 @@ if (authentication(userName)) {
 
 function authentication(userName) {
   for (var i = 0; i < names.length; i++) {
-    if (names[i] == userName.toLowerCase()) return true;
+    if (names[i] == userName.toLowerCase() & userName != '') return true;
   }
 }
