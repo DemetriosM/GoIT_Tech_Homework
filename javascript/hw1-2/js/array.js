@@ -21,6 +21,6 @@ if (authentication(userName)) {
 
 function authentication(userName) {
   for (var i = 0; i < names.length; i++) {
-    if (names[i] == userName.toLowerCase() & userName != '') return true;
+    if (names[i] == userName.toLowerCase() && userName != '') return true;
   }
 }
