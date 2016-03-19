@@ -1,9 +1,10 @@
 ﻿var names = [];
 var userName = '';
+var str = '';
 
 alert('Введите 5 имен');
 for (var i = 1; i <= 5; i++) {
-  var str = 'Введите любое имя ' + i;
+  str = 'Введите любое имя ' + i;
   names[i] = prompt(str, '');
   if (names[i]) {
 	  names[i] = names[i].toLowerCase();
@@ -12,7 +13,7 @@ for (var i = 1; i <= 5; i++) {
 
 userName = prompt('Введите ваше имя', '') || '';
 if (authentication(userName)) {
-  var str = userName + ', вы успешно вошли';
+  str = userName + ', вы успешно вошли';
   alert(str);
 }else {
   alert('В доступе отказано :)');

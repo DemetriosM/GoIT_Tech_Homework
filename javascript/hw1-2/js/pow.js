@@ -4,7 +4,7 @@ var x = +prompt('Введите число x=', '');
 var n = +prompt('Введите степень (целочисленное число больше нуля) n=', '');
 var result = x;
 
-if (!isNaN(x) & !isNaN(n) & Math.round(n) === n & n > 0) {
+if (!isNaN(x) && !isNaN(n) && Math.round(n) === n & n > 0) {
   result = pow(x, n);
   console.log('x =', x);
   console.log('n =', n);
