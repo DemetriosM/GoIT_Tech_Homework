@@ -26,7 +26,7 @@
   textOfButton: 'Проверить мои результаты',
   
   
-  formCreating: function () {
+  createForm: function () {
     var questionsArray = this.questionsArray;
     var themeOfTest = this.themeOfTest;
     var textOfButton = this.textOfButton;
@@ -42,21 +42,21 @@
     rubric.innerHTML = themeOfTest;
     form.appendChild(rubric);
 
-    var questions = this.questionsCreating(questionsArray);
+    var questions = this.createQuestions(questionsArray);
     form.appendChild(questions);
 
-    var submit = this.submitCreating(textOfButton);
+    var submit = this.createSubmit(textOfButton);
     form.appendChild(submit);
 
     return form;
   },
 
-  questionsCreating: function (questionsArray) {
+  createQuestions: function (questionsArray) {
     var questions = document.createElement('ol');
     questions.style.fontSize = '24px';
 
     for (var i = 0; i < questionsArray.length; i++) {
-      var singleQuestion = this.singleQuestionCreating(
+      var singleQuestion = this.createSingleQuestion(
         questionsArray[i].question, questionsArray[i].logicalGroupNumber,
         questionsArray[i].nameOfElements, questionsArray[i].options, questionsArray[i].multiReturn);
       questions.appendChild(singleQuestion);
@@ -65,11 +65,11 @@
     return questions;
   },
 
-  singleQuestionCreating: function (question, logicalGroupNumber, nameOfElements, options, multiReturn) {
+  createSingleQuestion: function (question, logicalGroupNumber, nameOfElements, options, multiReturn) {
     var problem = document.createElement('h3');
     problem.innerText = question;
 
-    var answers = this.groupAnswersCreating(logicalGroupNumber, nameOfElements, options, multiReturn);
+    var answers = this.createGroupAnswers(logicalGroupNumber, nameOfElements, options, multiReturn);
 
     var singleQuestion = document.createElement('li');
     singleQuestion.appendChild(problem);
@@ -78,13 +78,13 @@
     return singleQuestion;
   },
 
-  groupAnswersCreating: function (logicalGroupNumber, nameOfElements, options, multiReturn) {
+  createGroupAnswers: function (logicalGroupNumber, nameOfElements, options, multiReturn) {
     var answers = document.createElement('ul');
     answers.style.listStyle = 'none';
 
     for (var i = 0; i < options.length; i++) {
       var id = 'answer' + logicalGroupNumber + '.' + (i + 1);
-      var answer = this.singleAnswerCreating(id, options[i], multiReturn);
+      var answer = this.createSingleAnswer(id, options[i], multiReturn);
       answer.getElementsByTagName('input')[0].name = nameOfElements;
       answers.appendChild(answer);
     }
@@ -92,7 +92,7 @@
     return answers;
   },
 
-  singleAnswerCreating: function (id, answerText, multiReturn) {
+  createSingleAnswer: function (id, answerText, multiReturn) {
     var checkboxRadio = document.createElement('input');
     if (multiReturn) {
       checkboxRadio.type = 'checkbox';
@@ -118,7 +118,7 @@
     return answer;
   },
 
-  submitCreating: function (text) {
+  createSubmit: function (text) {
     var submit = document.createElement('input');
     submit.type = 'submit';
     submit.className = 'btn btn-primary btn-lg';
@@ -131,4 +131,4 @@
 }
 
 document.body.style.backgroundColor = '#cfcfff';
-document.body.appendChild(test.formCreating());
+document.body.appendChild(test.createForm());
