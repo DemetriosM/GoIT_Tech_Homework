@@ -40,16 +40,18 @@ function CreateTimer() {
       panel.sc = 0;
       panel.msc = 0;
     }   
-  }
+  };
 
   function ClonePanel() {
     this.copy = {};
     for (var key in panel) {
+	  if (!panel.hasOwnProperty(key)) continue;
       this.copy[key] = panel[key];
     }
   }
   function getLastClonePanel() {
     for (var key in panel) {
+	  if (!panel.hasOwnProperty(key)) continue;
       lastPanel[key] = panel[key];
     }
   }
@@ -88,7 +90,7 @@ function CreateTimer() {
       panel.status = 'Start';
     }
     displayTimer.printButtonStartStop(panel.status);
-  }
+  };
 
   this.splitTimer = function () {
     if (!flagStartStop) {
@@ -96,7 +98,7 @@ function CreateTimer() {
       pushSubtractStopItem(copyPanel, 'Split');
       displayTimer.printSplitItem(stopsList[stopsList.length - 1]);
     }
-  }
+  };
 
   this.resetTimer = function () {
     clearInterval(timerId);
@@ -108,7 +110,7 @@ function CreateTimer() {
     panel.sc = 0;
     panel.mm = 0;
     panel.hh = 0;
-  }
+  };
 }
 
 /*-----------------------------------DisplayTimer------------------------------------------*/
@@ -117,13 +119,13 @@ function DisplayTimer(panel) {
     if (panel.msc < 10) {
       document.getElementsByClassName('msc')[0].innerHTML = '.00' + panel.msc;
     }
-    if (panel.msc >= 10 & panel.msc < 100) {
+    if (panel.msc >= 10 && panel.msc < 100) {
       document.getElementsByClassName('msc')[0].innerHTML = '.0' + panel.msc;
     }
     if (panel.msc >= 100) {
       document.getElementsByClassName('msc')[0].innerHTML = '.' + panel.msc;
     }
-  }
+  };
 
   this.printSc = function() {
     if (panel.sc < 10) {
@@ -135,7 +137,7 @@ function DisplayTimer(panel) {
         document.getElementsByClassName('sc')[0].innerHTML = ':' + panel.sc;
       }
     }
-  }
+  };
 
   this.printMm = function() {
     if (panel.mm < 10) {
@@ -147,7 +149,7 @@ function DisplayTimer(panel) {
         document.getElementsByClassName('mm')[0].innerHTML = ':' + panel.mm;
       }
     }
-  }
+  };
 
   this.printHh = function() {
     if (panel.hh < 10) {
@@ -155,7 +157,7 @@ function DisplayTimer(panel) {
     } else {
       document.getElementsByClassName('hh')[0].innerHTML = ' ' + panel.hh;
     }
-  }
+  };
 
   this.printReset = function() {
     document.getElementsByClassName('msc')[0].innerHTML = '.000';
@@ -163,7 +165,7 @@ function DisplayTimer(panel) {
     document.getElementsByClassName('mm')[0].innerHTML = ':00';
     document.getElementsByClassName('hh')[0].innerHTML = ' 00';
     document.getElementsByClassName('list')[0].innerHTML = '';
-  }
+  };
 
   this.printSplitItem = function (stopListItem) {
     var splitItem = document.createElement('li');
@@ -173,11 +175,11 @@ function DisplayTimer(panel) {
     stopListItem = convertToString(stopListItem);
     splitItem.innerHTML = stopListItem.status + stopListItem.hh + stopListItem.mm + stopListItem.sc + stopListItem.msc;
     document.getElementsByClassName('list')[0].appendChild(splitItem);
-  }
+  };
 
   this.printButtonStartStop = function (startStop) {
     document.getElementsByClassName('start')[0].innerHTML = startStop;
-  }
+  };
 
   function convertToString(elem) {
     if (elem.hh < 10) elem.hh = ' 0' + elem.hh;

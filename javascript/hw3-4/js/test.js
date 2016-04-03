@@ -98,7 +98,7 @@
       checkboxRadio.type = 'checkbox';
     } else {
       checkboxRadio.type = 'radio';
-    };
+    }
     checkboxRadio.id = id;
 
     var label = document.createElement('label');
@@ -110,7 +110,7 @@
       answer.className = 'checkbox';
     } else {
       answer.className  = 'radio';
-    };
+    }
     answer.style.fontSize = '18px';
     answer.appendChild(checkboxRadio);
     answer.appendChild(label);
@@ -128,7 +128,7 @@
 
     return submit;
   }
-}
+};
 
 document.body.style.backgroundColor = '#cfcfff';
 document.body.appendChild(test.createForm());
