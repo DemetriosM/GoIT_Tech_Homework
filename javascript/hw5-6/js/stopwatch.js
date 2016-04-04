@@ -1,5 +1,5 @@
 ﻿/*-----------------------------------Timer------------------------------------------*/
-function CreateTimer() {
+function Timer() {
 
   var panel = {
     status: 'Start',
@@ -12,7 +12,7 @@ function CreateTimer() {
   var stopsList = [];
   var flagStartStop = true;
   var timerId;
-  var displayTimer = new DisplayTimer(panel);
+  var displayTimer = new TimerDisplay(panel);
   displayTimer.printReset();
 
   var runTimer = function () {
@@ -114,7 +114,7 @@ function CreateTimer() {
 }
 
 /*-----------------------------------DisplayTimer------------------------------------------*/
-function DisplayTimer(panel) {
+function TimerDisplay(panel) {
   this.printMsc = function() {
     if (panel.msc < 10) {
       document.getElementsByClassName('msc')[0].innerHTML = '.00' + panel.msc;
@@ -190,7 +190,7 @@ function DisplayTimer(panel) {
     if (elem.sc > 10) elem.sc = ':' + elem.sc;
     if (elem.sc === 60) elem.sc = ':00';
     if (elem.msc < 10) elem.msc = '.00' + elem.msc;
-    if (elem.msc >= 10 & elem.msc < 100) elem.msc = '.0' + elem.msc;
+    if (elem.msc >= 10 && elem.msc < 100) elem.msc = '.0' + elem.msc;
     if (elem.msc >= 100) elem.msc = '.' + elem.msc;
 
     return elem;
@@ -199,7 +199,7 @@ function DisplayTimer(panel) {
 /*-----------------------------------------------------------------------------*/
 
 
-var timer = new CreateTimer();
+var timer = new Timer();
 document.getElementsByClassName('start')[0].addEventListener('click', timer.startStopTimer);
 document.getElementsByClassName('split')[0].addEventListener('click', timer.splitTimer);
 document.getElementsByClassName('reset')[0].addEventListener('click', timer.resetTimer);
