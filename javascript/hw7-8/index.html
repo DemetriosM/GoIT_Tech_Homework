@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google" content="notranslate"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/form.js"></script>
+    <title>hw7-8</title>
+</head>
+<body>
+    <main id="main">
+
+        <hr/>
+
+        <form action="#" method="post" class="container">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <div class="inputs">
+                    <div class="inputs__item clearfix">
+                        <label>Имя *</label>
+                        <input type="text" id="firstName" maxlength="50" required/>
+                    </div>
+                    <div class="inputs__item clearfix">
+                        <label>Фамилия *</label>
+                        <input type="text" id="lastName" maxlength="50" required/>
+                    </div>
+                    <div class="inputs__item clearfix">
+                        <label>Адрес</label>
+                        <input type="text" id="address" maxlength="100"/>
+                    </div>
+                </div>
+            </fieldset>
+            <button>Показать подсказки</button>
+            <input type="submit" id="submit" value="Отправить"/>
+        </form>
+
+    </main>
+</body>
+</html>
