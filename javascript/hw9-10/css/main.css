@@ -1,0 +1,110 @@
+html{
+  min-width: 820px;
+  height: 100%;
+  background: #1c1225;
+}
+body{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1280px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  -moz-box-shadow:    0 0 10px 0 rgb(0, 0, 0);
+  box-shadow:         0 0 10px 0 rgb(0, 0, 0);
+}
+
+h3,
+h2{
+  padding: 20px 0;
+  text-align: center;
+  color: #e3e5ee;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000;
+  cursor: default;
+}
+h2{
+  line-height: 200px;
+  font-size: 48px;
+}
+
+h4{
+  display: none;
+}
+
+header{
+  width: 100%;
+  height: 240px;
+  background-color: #5a0808;
+  background: url(../img/header1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 30px 10px;
+  min-height: 350px;
+  border-bottom: 1px solid #000;
+  background: #fc786a;
+  color: #fff;
+}
+.container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.container__inner{
+  margin: 0 auto;
+  max-width: 800px;
+}
+.container_winter{
+  background: url(../img/winter4.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.container_leaf{
+  background: url(../img/leaf1.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.description{
+  padding: 10px 0 0;
+  text-align: center;
+  font-size: 18px;
+}
+.survey{
+  margin: 20px auto 50px;
+  cursor: default;
+}
+.survey p,
+.survey label{
+  margin: 0 0 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container_footer{
+  min-height: 40px;
+  background: #333745;
+  background: radial-gradient(#544e5f, #333745);
+  color: #fff;
+  text-align: right;
+}
+
+@media (max-width: 1310px){
+  h2{
+    line-height: 160px;
+  }
+
+  header{
+    height: 200px;
+  }
+}
+
+@media (max-width: 1060px){
+  h2{
+    line-height: 130px;
+  }
+
+  header{
+    height: 170px;
+  }
+}

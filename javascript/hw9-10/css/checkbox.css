@@ -1,0 +1,35 @@
+.check-js {
+display: inline-block;
+margin: 0 0 -3px 10px;
+width: 17px;
+height: 17px;
+cursor: pointer;
+background: url(../img/checkbox.png) no-repeat; 
+} 
+
+.check-js input {
+display: none; 
+} 
+
+
+.check-css { 
+  position: absolute; 
+  clip: rect(0, 0, 0, 0); 
+}
+.labels-css {
+  cursor: pointer;
+}
+.labels-css:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox.png) no-repeat;
+  position: relative; 
+  top: 3px;
+  margin-left: 15px;
+}
+.check-css:checked + .labels-css:after {
+  background-position: -20px 0;
+} 
+
