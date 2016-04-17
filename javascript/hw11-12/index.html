@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google" content="notranslate"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/carousel.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tmpl.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>hw11-12</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h3>КАРУСЕЛЬ</h3>
+            <div class="carousel">
+                <button class="carousel__arrow-left">&lt;</button>
+                <div class="carousel__hider">
+                    <ul class="slides">
+                        <li class="slides__item">
+                            <img src="img/pie_chart.png" alt="pie_chart" />
+                            <p>pie chart</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/line_chart.png" alt="line_chart" />
+                            <p>line chart</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/bar_chart.png" alt="bar_chart" />
+                            <p>bar chart</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/coins.png" alt="coins" />
+                            <p>coins</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/banknote.png" alt="banknote" />
+                            <p>banknote</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/gold.png" alt="gold" />
+                            <p>gold</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/calculator.png" alt="calculator" />
+                            <p>calculator</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/cash.png" alt="cash register" />
+                            <p>cash register</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/cart.png" alt="cart" />
+                            <p>cart</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/invoice.png" alt="invoice" />
+                            <p>invoice</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/card.png" alt="credit card" />
+                            <p>credit card</p>
+                        </li>
+                        <li class="slides__item">
+                            <img src="img/safe.png" alt="safe" />
+                            <p>safe</p>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel__arrow-right">&gt;</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <h3>Отдел разработки</h3>
+            <div class="employees">
+                <script type="text/tmpl" id="employees">
+                    <% for(var i=0; i < data.length; i++) { %>
+                    <article>
+                        <h5><%= data[i].name %></h5>
+                        <img src="<%= data[i].photo %>" alt="photo" />
+                        <p>позиция: <span><%= data[i].position %></span></p>
+                        <p>оклад: <span><%= data[i].salary %></span></p>
+                        <p>характеристика: <span><%= data[i].characterization %></span></p>
+                    </article>
+                    <hr/>
+                    <% }; %>
+                </script>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

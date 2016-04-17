@@ -1,0 +1,73 @@
+html{
+  min-width: 340px;
+  height: 100%;
+  background:  #979aa5;
+  background: radial-gradient(#1c1225, #979aa5 20%) fixed;
+  background-size: 10px 10px;
+}
+body{
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  max-width: 1280px;
+  padding: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  -moz-box-shadow:    0 0 10px 0 rgb(0, 0, 0);
+  box-shadow:         0 0 10px 0 rgb(0, 0, 0);
+}
+h3,
+h2{
+  padding: 20px 0;
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #adafb6;
+  cursor: default;
+}
+h2{
+  line-height: 200px;
+  font-size: 48px;
+}
+
+h4{
+  display: none;
+}
+h5{
+  font-size: 24px;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 30px 10px;
+  border-bottom: 1px solid #000;
+  background: #ffffff;
+  color: #000;
+}
+.container:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.employees{
+  margin: 0 auto;
+  width: 80%;
+}
+.employees article{
+  padding: 25px 0;
+  color: #000;
+}
+.employees article img{
+  margin: 0 0 20px;
+  width: 170px;
+}
+.employees article p{
+  line-height: 24px;
+  font-size: 20px;
+  color: #000;
+}
+.employees hr{
+  width: 220px;
+  background-color: #e5e5e5;
+}
