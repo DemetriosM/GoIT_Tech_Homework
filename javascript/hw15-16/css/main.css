@@ -1,0 +1,47 @@
+html{
+  min-width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+body{
+  background-color: #fff;
+}
+h3{
+  padding: 10px 0 20px;
+  color: #000;
+  font-size: 24px;
+  cursor: default;
+}
+
+hr{
+  margin: 0;
+  border: 1px solid#c5c5c5;
+}
+
+#search{
+  padding: 20px;
+  width: 100%;
+  background-color: #F1F1F1;
+}
+#search__logo{
+  width: 70px;
+  vertical-align: middle;
+}
+#search__field{
+  margin-left: 20px;
+  width: 60%;
+  height: 42px;
+  vertical-align: middle;
+  font-size: 24px;
+}
+#search__button{
+  margin-left: -5px;
+  width: 48px;
+  height: 48px;
+  outline: none;
+  border: 1px solid #8a8a8a;
+  vertical-align: middle;
+  background: #357AE8 url(../img/search.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
