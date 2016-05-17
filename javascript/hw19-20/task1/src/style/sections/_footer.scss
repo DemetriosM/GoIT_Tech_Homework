@@ -1,0 +1,132 @@
+.section_partners{
+    background-color: transparent;
+}
+
+.container_partners{
+    padding: 90px 0;
+    
+    ul{
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    li{
+        display: inline-block;       
+    }
+    
+    a{
+        display: block;
+        width: 154px;
+        height: 60px;
+    }
+    
+    .partner-1 a{
+        background: url($src-img-sprites + 'logos.png') 0 0 no-repeat;
+    }
+    .partner-2 a{
+        background: url($src-img-sprites + 'logos.png') -185px 0 no-repeat;
+    }
+    .partner-3 a{
+        background: url($src-img-sprites + 'logos.png') -355px 0 no-repeat;
+    }
+    .partner-4 a{
+        background: url($src-img-sprites + 'logos.png') -525px 0 no-repeat;
+    }
+    .partner-5 a{
+        background: url($src-img-sprites + 'logos.png') -710px 0 no-repeat;
+    }
+    .partner-6 a{
+        background: url($src-img-sprites + 'logos.png') -895px 0 no-repeat;
+    }
+}
+
+// -------------------------------------------------------------------------
+
+.section_navigaton{
+    background-color: $bg-color-menu;
+}
+
+.container_navigation{
+    padding: 60px 0 75px;
+}
+
+.navigation{
+    float: left;
+    width: $navigation-width;
+    margin-right: (40/1160)*100%;
+}
+
+.navigation__header{
+    color: $color-menu-top;
+    margin-bottom: 45px;
+    cursor: default;
+}
+
+.navigation:last-child{
+    margin-right: 0;
+}
+
+.navigation__menu{
+    
+    a{
+        line-height: 25px;
+        color: $color-describe-p;
+        font-family: $font-arial;
+        font-size: $font-size-p;
+    }
+    a:hover{
+        color: $bg-color-menu-active;
+    }
+    
+    hr{
+        border-bottom:0;
+    }
+}
+
+// ------------------------------------------------------------------------
+
+.section_contacts{
+    background-color: $bg-color-contacts;
+}
+
+.container_contacts{
+    padding: 20px 0;
+    
+    ul{
+        float: left;
+        color: $color-describe-p;
+    }
+    
+    li{
+        position: relative;
+        display: inline-block;
+        padding: 0 20px;
+        font-size: $font-size-contacts;
+    }
+    
+    p{
+        float: right;
+        color: $color-describe-p;
+        font-size: $font-size-contacts;
+    }
+}
+
+.contacts__adress::before{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: block;
+    width: 17px;
+    height: 18px;  
+    content: "";
+    background: url($src-img-sprites + 'contacts.png') 0 0 no-repeat;
+}
+.contacts__phone::before{
+    @extend  .contacts__adress::before;
+    background: url($src-img-sprites + 'contacts.png') -25px 0 no-repeat;
+}
+.contacts__email::before{
+    @extend  .contacts__adress::before;
+    background: url($src-img-sprites + 'contacts.png') -49px 0 no-repeat;
+}

@@ -1,0 +1,40 @@
+body{
+    background-color: $bg-color-main;
+}
+
+.section{
+    width: $section-width;
+    background-color: $bg-color-main;
+}
+
+.container{
+    margin: 0 auto;
+    width: $container-width;
+    max-width: $container-max-width;
+    min-width: $container-min-width;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1, h3, h4, h5{
+    font-family: $font-ubuntu;
+    font-weight: 500;
+}
+h1{
+    font-size: $font-size-h1;
+}
+h3{
+    font-size: $font-size-h3;
+}
+h4{
+    font-size: $font-size-h4;
+}
+h5{
+    font-size: $font-size-h5;
+}
+h6{
+    display: none;
+}

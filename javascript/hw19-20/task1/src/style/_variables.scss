@@ -1,0 +1,66 @@
+//src
+$src-img: '../img/';
+$src-img-sprites: '../img/sprites/';
+$src-img-news: '../img/news/';
+
+// size of main blocks
+$section-width: 100%;
+
+$container-width: 90%;
+$container-max-width: 1160px;
+$container-min-width: 980px;
+
+$header-title-item: 38px;
+
+$describe-width: (360/1160)*100%;
+
+$services-width: (260/1160)*100%;
+
+$news-width: (560/1160)*100%;
+
+$navigation-width: (260/1160)*100%;
+
+
+// background-color
+$bg-color-main: #fff;
+
+$bg-color-menu: #2a2d32;
+$bg-color-menu-active: #248cec;
+$bg-color-search: #35383c;
+
+$bg-color-describe: transparent;
+$bg-color-news: #f7f7f7;
+$bg-color-contacts: #35383c;
+
+
+//border-color
+$border-color-menu: #151515;
+$border-color-search: #181a1d;
+
+
+// color
+$color-logo: #333333;
+$color-menu-top: #fff;
+$color-menu-top-hover: #f4b60d;
+
+$color-describe: #2a2b2e;
+$color-describe-p: #8a8a8a;
+
+$color-news-title: #2a2d32;
+
+
+// font-family
+$font-ubuntu: Ubuntu, Arial, sans-serif;
+$font-arial: Arial, sans-serif;
+
+
+// font-size
+$font-size-h1: 30px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: 16px;
+$font-size-p: 13px;
+$font-size-p2: 16px;
+$font-size-a: 14px;
+$font-size-description-before: 90px;
+$font-size-contacts: 12px;
