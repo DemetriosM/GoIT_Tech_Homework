@@ -1,0 +1,334 @@
+.container_describe{   
+    padding: 72px 0 88px;
+    background-color: $bg-color-describe;
+}
+
+.describe{
+    position: relative;
+    float: left;
+    margin-right: (40/1160)*100%;
+    padding-left: (120/1160)*100%;
+    width: $describe-width;
+}
+.describe_3{
+    margin-right: 0;
+}
+.describe::before{
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 0;
+    color: $color-describe;
+    font-family: $font-ubuntu;
+    font-weight: 500;
+    font-size: $font-size-description-before;
+    opacity: 0.1;
+}
+.describe_1::before{
+    content: '01';
+}
+.describe_2::before{
+    content: '02';
+}
+.describe_3::before{
+    content: '03';
+}
+
+.describe_1{
+    i{
+        background: url($src-img-sprites + 'icons.png') 0 0 no-repeat;
+    }
+}
+.describe_2{
+    i{
+        background: url($src-img-sprites + 'icons.png') -47px 0 no-repeat;
+    }
+}
+.describe_3{
+    i{
+        background: url($src-img-sprites + 'icons.png') -94px 0 no-repeat;
+    }
+}
+
+.describe__icon{
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+
+.describe__title{
+    margin: 16px 0 25px;
+    color: $color-describe;
+}
+
+.describe__text{
+    margin-bottom: 22px;
+    line-height: 20px;
+    color: $color-describe-p;
+    font-family: $font-arial;
+    font-size: $font-size-p;
+}
+
+.describe__link{
+    position: relative;
+    color: $color-describe;
+    font-family: $font-ubuntu;
+    font-weight: 500;
+    font-size: $font-size-a;
+}
+.describe__link::after{
+    position: absolute;
+    top: 30%;
+    right: -15px;
+    width: 11px;
+    height: 11px;
+    content: '';
+    background: url($src-img-sprites + 'arrow.png') 0 0 no-repeat;
+}
+.describe__link:hover{
+    color: $bg-color-menu-active;
+}
+.describe__link:hover::after{
+    background: url($src-img-sprites + 'arrow.png') -15px 0 no-repeat;
+}
+
+//-------------------------------------------------------------------
+
+.section_services{
+   background-color: $bg-color-menu; 
+}
+
+.container_services{
+    padding: 40px 0 45px;
+    
+    h3{
+        color: #fff;
+        margin-bottom: 30px;
+    }
+}
+
+.figure{
+    float: left;
+    width: $services-width;
+    margin-right: (40/1160)*100%;      
+}
+
+.figure:last-child{
+    margin-right: 0;
+}
+
+.figure__img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    span{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        line-height: 240px;
+        text-align: center;
+        background-color: $bg-color-menu-active;
+        color: #fff;
+        font-size: 70px;
+        opacity: 0;
+        @include transition(all, 300ms, ease-in-out);
+    }
+}
+
+.figure__description{
+    text-align: center;
+    color: $color-menu-top;
+    font-family: $font-ubuntu;
+    font-size: $font-size-p2;
+}
+
+.figure:hover{
+    span{
+        height: 100%;
+        opacity: 0.9;
+    }
+    
+    .figure__description{
+        color: $color-menu-top-hover;
+    }
+}
+
+//-------------------------------------------------------------------
+
+.section_news{
+    background-color: $bg-color-news;
+}
+
+.container_news{
+    padding: 42px 0 25px;
+}
+
+
+.news{
+    float: left;
+    width: $news-width;
+}
+
+.news__title{
+    margin-bottom: 40px;
+    color: $color-news-title;
+}
+
+.news__article{
+    margin-bottom: 32px;
+    line-height: 20px;
+    
+    .img{
+        position: relative;
+        float: left;
+        width: 150px;
+        height: 150px;
+    }
+    .img::before{
+        position: absolute;
+        top: 13px;
+        left: -17px;
+        z-index: 10;
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $bg-color-menu-active;
+        color: #fff;
+        font-family: $font-ubuntu;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .img::after{
+        @extend .img::before;
+        top: 53px;
+        background-color: $color-menu-top-hover;
+        color: #000;
+    }
+    
+    .article{
+        float: right;
+        width: (377/560)*100%;
+    }
+    
+    a{    
+        color: $color-news-title;
+    }
+    a:hover{
+        color: $bg-color-menu-active;
+    }
+    h5{
+        margin-bottom: 5px;
+    }
+    
+    p{
+        color: $color-describe-p;
+        font-family: $font-arial;
+        font-size: $font-size-p;
+    }
+    
+    span{
+        color: $bg-color-menu-active;
+    }
+}
+
+.news__article::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.news__article_1{ 
+    .img{
+        background: url($src-img-news + 'engineer.jpg') no-repeat;
+    }
+    .img::before{
+        content: 'Jan';
+    }
+    .img::after{
+        content: '23';
+    }
+}
+.news__article_2{
+    .img{
+        background: url($src-img-news + 'draft.jpg') no-repeat;
+    }
+    .img::before{
+        content: 'Jan';
+    }
+    .img::after{
+        content: '21';
+    }
+}
+
+// ------
+.banners{
+    float: right;
+    margin-left: (40/1160)*100%;
+    width: $news-width;
+}
+
+.banners__title{
+    @extend .news__title;
+}
+
+// plugin Accordion
+.ac-pane { 
+  margin-bottom: 7px; 
+  background-color: transparent; 
+}
+
+.ac-pane:last-child { margin-bottom: 0; }
+
+.ac-title {
+  display: block;
+  border: 1px solid #e8e8e8;
+  line-height: 39px;
+  color: $color-news-title;
+  background-color: $color-menu-top;
+  
+  span {
+    font-family: $font-ubuntu;
+    font-weight: 500;
+  }
+  
+  i {
+    float: left;
+    margin-right: 10px;
+    width: 39px;
+    line-height: 40px;
+    text-align: center;
+    border-right: 1px solid #e8e8e8;
+    font-size: 10px;    
+  }
+}
+
+.active .ac-title {
+  border: 1px solid $bg-color-news;
+  color: #fff;
+  background-color: $color-menu-top-hover;
+  
+  i {
+    border-right: 1px solid $bg-color-news;
+  }
+}
+
+.ac-title i:before { content: "\f067"; }
+
+.active .ac-title i:before { content: "\f068"; }
+
+.ac-content {
+  display: none;
+  margin-top: 0;
+  padding: 25px 0 25px 39px;
+  line-height: 20px;
+  color: $color-describe-p;
+  font-family: $font-arial;
+  font-size: $font-size-p;
+}
+// ------

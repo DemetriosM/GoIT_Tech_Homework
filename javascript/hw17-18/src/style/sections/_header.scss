@@ -1,0 +1,234 @@
+.header{
+    position: relative;
+    overflow: hidden;
+    padding: 28px 0 34px 5px;
+}
+
+.header__logo{
+    float: left;
+    color: $color-logo;
+    
+    img{
+        float: left;
+        width: $header-title-item;
+        height: $header-title-item;
+    }
+    
+    figcaption{
+        float: right;
+        margin-left: 10px;
+        line-height: 20px;
+        text-align: center;       
+        
+        p{
+            margin: 2px 0 0 5px;
+            font-family: $font-ubuntu;
+            font-weight: 300;
+            font-size: $font-size-p;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.header__social{
+    float: right;
+    height: $header-title-item;
+    
+    ul{
+        position: relative;
+        overflow: hidden;
+        margin-top: 9px;
+    }
+    
+    li{
+        float: left;
+        margin-left: 18px;
+    }
+    
+    a{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.facebook{
+    background: url($src-img-sprites + 'social.png') 0 0 no-repeat;
+}
+.twitter{
+    background: url($src-img-sprites + 'social.png') -22px 0 no-repeat;
+}
+.rss{
+    background: url($src-img-sprites + 'social.png') -48px 0 no-repeat;
+}
+.linkedin{
+    background: url($src-img-sprites + 'social.png') -76px 0 no-repeat;
+}
+.skype{
+    background: url($src-img-sprites + 'social.png') -104px 0 no-repeat;
+}
+
+.facebook:hover{
+    background: url($src-img-sprites + 'social.png') 0 -26px no-repeat;
+}
+.twitter:hover{
+    background: url($src-img-sprites + 'social.png') -22px -26px no-repeat;
+}
+.rss:hover{
+    background: url($src-img-sprites + 'social.png') -48px -26px no-repeat;
+}
+.linkedin:hover{
+    background: url($src-img-sprites + 'social.png') -76px -26px no-repeat;
+}
+.skype:hover{
+    background: url($src-img-sprites + 'social.png') -104px -26px no-repeat;
+}
+
+.menu{
+    margin-bottom: 39px; 
+    background-color: $bg-color-menu;
+    
+    li{
+        float: left;
+    }
+    
+    .menu__search{
+        float: right;
+        margin: 5px 5px 0 0;
+        height: 40px;
+    }
+    
+    a{
+        display: block;
+        padding: 0 39px;
+        border-right: 1px solid $border-color-menu;
+        line-height: 50px;
+        color: $color-menu-top;
+        font-family: $font-ubuntu;
+        letter-spacing: -1px;
+        font-size: $font-size-a;
+    }
+    
+    a:hover{
+        color: $color-menu-top-hover;
+    }
+    
+    .active{
+        background-color: $bg-color-menu-active;
+    }
+}
+
+.menu::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu__search{
+    input{
+        float: left;
+        padding-left: 13px;
+        width: 200px;
+        height: 100%;
+        line-height: 36px;
+        border: 1px solid $border-color-search;
+        outline: 0;
+        background-color: $bg-color-search;
+        color: #fff;
+        font-family: $font-arial;
+        font-size: $font-size-contacts;
+    }
+    
+    button{
+        margin-left: -2px;
+        width: 40px;
+        height: 100%;
+        border: 1px solid $border-color-search;
+        border-left: 0;
+        outline: 0;
+        background: $bg-color-search url($src-img + 'search.png') center center no-repeat;
+        cursor: pointer;
+    }
+    
+    button:hover{
+        background-color: $bg-color-menu;
+    }
+}
+
+
+
+//  plugin Carousel
+.jcarousel-wrapper {
+    position: relative;
+    width: 100%;
+    border: 0;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+.jcarousel ul {
+    width: 300%;
+    position: relative;
+}
+.jcarousel li {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+}
+.jcarousel__img {
+    display: block;
+    width: 100%;
+}
+.jcarousel__control-prev {
+    left: 15px;
+}
+.jcarousel__control-next {
+    right: 15px;
+}
+.jcarousel__control-prev, 
+.jcarousel__control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    font: 28px Arial, sans-serif;
+}
+.jcarousel__control-prev:hover, 
+.jcarousel__control-next:hover {
+    background: #000;
+    color: #03a9f4;
+}
+.jcarousel__pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
+    margin: 0;
+    margin-left: -22px;
+}
+.jcarousel__pagination a {
+    display: inline-block;
+    margin-right: 15px;
+    height: 15px;
+    width: 15px;
+    line-height: 10px;
+    border: 3px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size: 11px;
+    text-indent: -9999px;
+}
+.jcarousel__pagination a.active {
+    background: #000;
+    color: #fff;
+    opacity: 1;
+}
+

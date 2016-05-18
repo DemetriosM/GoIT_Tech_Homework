@@ -1,0 +1,39 @@
+{
+  "name": "hw19-20",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "lintOptions": {
+    "bitwise": true,
+    "curly": true,
+    "forin": true,
+    "latedef": true,
+    "newcap": true,
+    "undef": true,
+    "boss": true,
+    "esnext": true
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "browser-sync": "^2.12.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1",
+    "rimraf": "^2.5.2"
+  },
+  "dependencies": {
+    "imagemin-pngout": "^2.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
