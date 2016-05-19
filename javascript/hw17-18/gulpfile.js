@@ -1,7 +1,6 @@
 
 
 var gulp = require('gulp'),
-    prefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     cssmin = require('gulp-clean-css'),
@@ -12,7 +11,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rigger = require('gulp-rigger'),
-    sourcemaps = require('gulp-sourcemaps'),
     rename = require('gulp-rename'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
@@ -62,7 +60,6 @@ gulp.task('html:build', function () {
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js)
-        //.pipe(rigger())
         .pipe(plumber())
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
@@ -80,9 +77,6 @@ gulp.task('style:build', function () {
     gulp.src(path.src.scss)
         .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
-        // .pipe(prefixer({
-        //   browsers: ['last 25 versions'], 
-        // }))
         .pipe(cssmin({debug: true}, function(details) {
              console.log(details.name + ': ' + details.stats.originalSize);
              console.log(details.name + ': ' + details.stats.minifiedSize);
