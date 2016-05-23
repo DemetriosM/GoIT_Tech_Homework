@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/dist/main.js"></script>
+    <script src="js/tmpl.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>
+    <![endif]-->
+    <title>hw13-14</title>
+</head>
+<body>
+
+    <form class="form container">
+        <h3>Тест по программированию</h3>
+        <hr/>
+            <script type="text/tmpl" id="test">
+                <% for(var i=0; i < data.length; i++) { %>
+                <article>
+                    <h5><%= data[i].question %></h5>
+                    <% for(var j=0; j < data[i].options.length; j++) { %>
+                        <% if (data[i].multiReturn){ %>
+                            <div class="answer">
+                                <input type="checkbox" id="<%= data[i].nameOfElements + '.' + j %>"/>
+                                <label for="<%= data[i].nameOfElements + '.' + j %>"><%= data[i].options[j] %></label>
+                            </div>
+                        <% }else{ %>
+                            <div class="answer">
+                                <input type="radio" name="<%=data[i].nameOfElements%>" id="<%= data[i].nameOfElements + '.' + j %>"/>
+                                <label for="<%= data[i].nameOfElements + '.' + j %>"><%= data[i].options[j] %></label>
+                            </div>
+                        <% }; %>
+                        <% }; %>
+                </article>
+                <hr/>
+                <% }; %>
+                <input type="submit" class="submit" value="Проверить мои результаты"/>
+            </script>
+    </form>
+
+    <script type="text/tmpl" id="result">
+        <div class="overlay">
+            <div class="modal">
+                <h3>Результаты</h3>
+                <% for(var i=0; i < data.length; i++) { %>
+                   <p><%= data[i] %></p>
+                <% }; %>
+                <button>OK</button>
+            </div>
+        </div>
+    </script>
+
+</body>
+</html>

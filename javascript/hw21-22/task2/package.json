@@ -1,0 +1,11 @@
+{
+  "name": "hw21-22",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  }
+}
