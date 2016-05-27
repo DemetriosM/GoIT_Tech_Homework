@@ -33,7 +33,7 @@
     let test = tmpl(questions, data);
     $('.form').append(test);
 
-    $('.submit').on('click', function () {
+    $('.submit').on('click', ()=>{
       checkAnswers();
       showModal();
       return false;
@@ -68,7 +68,7 @@
       let summary = tmpl(modal, { data: result });
       $('body').append(summary);
 
-      $('.modal button').one('click', function () {
+      $('.modal button').one('click', ()=>{
         $('input').prop('checked', false);
         result = [];
         $('.overlay').remove();

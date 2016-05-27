@@ -1,0 +1,78 @@
+
+
+
+//  plugin Carousel
+.jcarousel-wrapper {
+    position: relative;
+    width: 100%;
+    border: 0;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+.jcarousel ul {
+    width: 300%;
+    position: relative;
+}
+.jcarousel li {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+}
+.jcarousel__img {
+    display: block;
+    width: 100%;
+}
+.jcarousel__control-prev {
+    left: 15px;
+}
+.jcarousel__control-next {
+    right: 15px;
+}
+.jcarousel__control-prev, 
+.jcarousel__control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    font: 28px Arial, sans-serif;
+}
+.jcarousel__control-prev:hover, 
+.jcarousel__control-next:hover {
+    background: #000;
+    color: #03a9f4;
+}
+.jcarousel__pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
+    margin: 0;
+    margin-left: -22px;
+}
+.jcarousel__pagination a {
+    display: inline-block;
+    margin-right: 15px;
+    height: 15px;
+    width: 15px;
+    line-height: 10px;
+    border: 3px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size: 11px;
+    text-indent: -9999px;
+}
+.jcarousel__pagination a.active {
+    background: #000;
+    color: #fff;
+    opacity: 1;
+}
+

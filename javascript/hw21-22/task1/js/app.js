@@ -1,6 +1,6 @@
 ﻿var app = {
   
-  pow: function (x, n) {
+  pow: (x, n)=>{
           var result = x;
           if (!isNaN(x) && !isNaN(n) && Math.round(n) === n && n > 0) {
             for (var i = 0; i < n-1; i++) {

@@ -1,20 +1,20 @@
 var app = require('../js/app.js');
 
-describe("app", function() {
+describe("pow function in app", ()=>{
   
   var result;
   
-  it("pow(2, 2)", function() {
+  it("should failed if 2*2 not to be 4", ()=>{
     result = app.pow(2, 2);
     expect(result).toBe(4);
   });
   
-  it("pow(2, 'aaa')", function() {
+  it("should be successful if there is a message - Функция возводит в степень равную целому положительному числу", ()=>{
     result = app.pow(2, 'aaa');
     expect(result).toBe(false);
   });
   
-  it("pow('xxx', 2)", function() {
+  it("should be successful if there is a message - Вводите числа", ()=>{
     result = app.pow('xxx', 2);
     expect(result).toBe(false);
   });
