@@ -1,0 +1,177 @@
+//  SLIDERS
+.sliders{
+    padding: 38px 10px 35px;
+    
+    h3{
+        margin: 0 0 15px;
+    }
+}
+.sliders::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 300px;
+    height: 240px;
+    @include border-radius(4px);
+}
+
+.jcarousel ul {
+    width: 300%;
+    position: absolute;
+    top: -100px !important;
+}
+
+.jcarousel li {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 0;
+}
+
+.jcarousel__img {
+    display: block;
+}
+
+.jcarousel__description{
+    position: absolute;
+    bottom: 76px;
+    left: 20px;
+    right: 20px;
+    
+    a{
+        @extend .promo__link;
+        margin: 0;
+        width: 70px;
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    h4{
+        margin: 16px 0;
+        line-height: 27px;
+    }
+    
+    p{
+        line-height: 16px;
+        color: #cccccc;
+        font-size: 14px;
+    }
+}
+
+.jcarousel__control-prev, 
+.jcarousel__control-next {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    
+    .sliders{
+        margin: 0 auto;
+        padding: 98px 0 35px;
+        width: 768px;
+        
+        h3{
+            margin: 0 0 35px;
+        }
+    }
+    
+    .jcarousel {
+        float: left;
+        margin: 0 10px;
+        width: 236px;
+        height: 400px;
+    }
+    
+    .jcarousel ul {
+        position: relative;
+        top: 0 !important;
+    }
+    
+    .jcarousel li {
+        width: 236px;
+    }
+    
+    .jcarousel__img{
+        height: 400px;
+    }
+    
+    .jcarousel__description{
+        bottom: 17px;
+        right: 5px;     
+    }
+    
+    .jcarousel__control-prev, 
+    .jcarousel__control-next {
+        display: block;
+        position: absolute;
+        top: 40px;
+        width: 31px;
+        height: 55px;
+        opacity: 0.5;
+    }
+    
+    .jcarousel__control-prev {
+        left: 17px;
+    }
+    
+    .jcarousel__control-next {
+        right: 17px;
+    }
+    
+    .jcarousel__control-prev{
+        background: url('../img/slider/arrows.png') 0 0 no-repeat;
+    }
+    
+    .jcarousel__control-next{
+        background: url('../img/slider/arrows.png') -33px 0 no-repeat;
+    }
+    
+    .jcarousel__control-prev:hover, 
+    .jcarousel__control-next:hover {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    
+    .sliders{
+        padding: 98px 230px 35px 250px;
+        width: 1440px;
+    }
+    
+    .jcarousel {
+        margin: 0;
+        margin-right: 18px;
+        width: 300px;
+    }
+    
+    .jcarousel li {
+        width: 300px;
+    }
+    
+    .jcarousel:last-child{
+        margin-right: 0;
+    }
+    
+    .jcarousel__control-prev, 
+    .jcarousel__control-next {
+        top: 154px;
+    }
+    
+    .jcarousel__control-prev {
+        left: 20px;
+    }
+    
+    .jcarousel__control-next {
+        right: 20px;
+    }
+}

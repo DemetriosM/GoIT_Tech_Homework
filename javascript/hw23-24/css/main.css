@@ -7,7 +7,7 @@ html{
 }
 main{
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   max-width: 1280px;
   padding: 40px 0;
 }
@@ -15,7 +15,7 @@ main{
 .container{
   margin: 0 auto;
   padding: 20px;
-  height: 500px;
+  min-height: 500px;
   border: 1px solid #878787;
   border-radius: 10px;
   background: rgb(103, 64, 64);
@@ -43,7 +43,7 @@ main{
 .controlls__edit,
 .controlls__clear{
     display: block;
-    width: 95%;
+    width: 98%;
     height: 40px;    
     color: #2B2A28;
 }
@@ -59,7 +59,7 @@ main{
 .controlls__clear{
     outline: none;
     background: #DAD2D0;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -72,7 +72,7 @@ main{
 .list{
     float: right;
     width: 70%;
-    height: 100%;
+    min-height: 460px;
     padding: 20px;
     background: #fff;
     color: #2B2A28;

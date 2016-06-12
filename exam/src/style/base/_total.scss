@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto light';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html{
+    background-color: #fff;
+}
+
+body{
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px; 
+}
+
+h1, h2, h3,
+h4, h5, h6,
+a{
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+}
+
+h4{
+    color: #fff;
+    font-size: 24px;
+}
+
+a{
+    font-size: 14px;
+}
+
+p{
+    font-family: 'Roboto light', Arial, sans-serif;
+}
+
+@media screen and (min-width: 768px){
+    h2{
+        font-size: 52px;
+    }
+}

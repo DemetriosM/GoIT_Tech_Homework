@@ -1,5 +1,3 @@
-
-
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
@@ -20,20 +18,23 @@ var path = {
     build: {
         html: 'build/',
         js: 'build/js/',
+        jsLib: 'build/js/lib/',
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
     src: {
         html: 'src/index.html',
-        js: 'src/js/**/*.js',
+        js: 'src/js/*.js',
+        jsLib: 'src/js/lib/*.js',
         scss: 'src/style/main.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
-        js: 'src/js/**/*.js',
+        js: 'src/js/*.js',
+        jsLib: 'src/js/lib/*.js',
         scss: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -73,6 +74,14 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('jsLib:build', function () {
+    gulp.src(path.src.jsLib)
+        .pipe(plumber())
+        .pipe(uglify())
+        .pipe(gulp.dest(path.build.jsLib))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('style:build', function () {
     gulp.src(path.src.scss)
         .pipe(plumber())
@@ -105,6 +114,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('build', [
     'html:build',
+    'jsLib:build',
     'js:build',
     'style:build',
     'fonts:build',
@@ -120,6 +130,9 @@ gulp.task('watch', function(){
     });
     gulp.watch(path.watch.js, function(event) {
         gulp.start('js:build');
+    });
+    gulp.watch(path.watch.jsLib, function(event) {
+        gulp.start('jsLib:build');
     });
     gulp.watch(path.watch.img, function(event) {
         gulp.start('image:build');
