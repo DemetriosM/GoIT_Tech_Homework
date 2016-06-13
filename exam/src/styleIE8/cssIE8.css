@@ -1,0 +1,179 @@
+.promo__link,
+.jcarousel__description a,
+.section-partners__link{
+    border: 2px solid #ff4e50;
+    background-color: #ff4e50;
+    color: #fff;
+}
+.promo__link:hover,
+.jcarousel__description a:hover,
+.section-partners__link:hover{
+    background-color: #fff;
+    color: #ff4e50;
+}
+
+/*SLIDERS*/
+.sliders{
+    margin: 0 auto;
+    padding: 98px 0 35px;
+    width: 768px;
+    overflow: hidden;
+}
+
+.sliders h3{
+    margin: 0 0 35px;
+}
+
+.jcarousel {
+    float: left;
+    margin: 0 10px;
+    width: 236px;
+    height: 400px;
+}
+
+.jcarousel ul {
+    position: relative;
+    top: 0 !important;
+}
+
+.jcarousel li {
+    width: 236px;
+}
+
+.jcarousel__img{
+    height: 400px;
+}
+
+.jcarousel__description{
+    bottom: 17px;
+    right: 5px;     
+}
+
+.jcarousel__control-prev, 
+.jcarousel__control-next {
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 31px;
+    height: 55px;
+}
+
+.jcarousel__control-prev {
+    left: 17px;
+}
+
+.jcarousel__control-next {
+    right: 17px;
+}
+
+.jcarousel__control-prev{
+    background: url('../../img/slider/arrows.png') 0 0 no-repeat;
+}
+
+.jcarousel__control-next{
+    background: url('../../img/slider/arrows.png') -33px 0 no-repeat;
+}
+
+/*Section PARTNERS*/
+.section-partners{
+    margin: 0 auto;
+    padding: 63px 0 20px;
+    width: 500px;
+}
+
+.section-partners h3{
+    margin: 0;
+}
+
+.partner{
+    margin: 28px 15px 34px;
+    float: left;
+}
+
+.section-partners__link{
+    height: 40px;
+    width: 195px;
+    clear: both;
+}
+
+/*Section IDEAS*/
+.section-ideas{
+    padding: 79px 10px 65px;
+    width: 768px;   
+}
+
+.section-ideas h3{
+    margin: 0 0 35px;
+ }
+
+.section-ideas form{
+    margin: 38px auto;
+    width: 420px;
+}
+
+.section-ideas input[type="text"]{
+    float: left;
+    margin: 0 5px 0 0;
+    width: 240px;
+}
+
+.section-ideas input[type="submit"]{
+    width: 160px;
+}
+
+.ideas{
+    margin: 0 auto 75px;
+    width: 748px;
+}
+
+.ideas__item{
+    display: inline-block;
+    margin-bottom: 20px;        
+    height: 310px;
+    line-height: 310px;
+    background-position: center center;
+}
+
+.ideas__item,
+.ideas__sizer{
+    width: 236px;
+}
+
+.ideas__item_big{
+    width: 492px;
+}
+
+/*FOOTER*/
+.section-footer{
+    padding: 37px 40px;
+    width: 768px;
+}
+
+.logo_footer,
+.menu{
+    float: left;
+}
+
+.logo_footer{
+    font-size: 16px;
+}
+
+.menu{
+    margin: 0 105px 0 85px;
+}
+
+.menu__item{
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.menu_partners{
+    margin: 0;
+}
+
+.designer{
+    float: right;
+}
+
+

@@ -29,15 +29,26 @@ html{
     background-color: #fff;
 }
 
-body{
-  margin: 0 auto;
-  max-width: 1440px;
-  min-width: 320px; 
+header{
+    background: #333 url('../img/header.jpg') center top no-repeat;
+    background-size: cover;
+}
+
+main,
+footer{
+    background-color: #fff;
+}
+
+footer hr{
+    margin: 0;
+    height: 4px;
+    border: 0;
+    background-color: #ff4e50;
 }
 
 h1, h2, h3,
-h4, h5, h6,
-a{
+h4, h5, a, 
+input[type="submit"]{
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 0.01em;
@@ -48,6 +59,7 @@ h2{
 }
 
 h3{
+    line-height: 24px;
     text-align: center;
     color: #333;
     font-size: 22px;
@@ -58,11 +70,13 @@ h4{
     font-size: 24px;
 }
 
-a{
+h5, a,
+input{
     font-size: 14px;
 }
 
-p{
+p,
+input[type="text"]{
     font-family: 'Roboto light', Arial, sans-serif;
 }
 

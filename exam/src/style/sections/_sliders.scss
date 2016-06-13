@@ -1,9 +1,10 @@
 //  SLIDERS
 .sliders{
-    padding: 38px 10px 35px;
+    @extend .section-header;
+    padding: 39px 10px 27px;
     
     h3{
-        margin: 0 0 15px;
+        margin: 0 0 13px;
     }
 }
 .sliders::after{
@@ -144,13 +145,12 @@
 @media screen and (min-width: 1440px){
     
     .sliders{
-        padding: 98px 230px 35px 250px;
+        padding: 98px 240px 35px;
         width: 1440px;
     }
     
     .jcarousel {
-        margin: 0;
-        margin-right: 18px;
+        margin: 0 13px 0 8px;
         width: 300px;
     }
     

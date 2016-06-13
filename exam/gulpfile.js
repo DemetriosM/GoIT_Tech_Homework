@@ -20,6 +20,7 @@ var path = {
         js: 'build/js/',
         jsLib: 'build/js/lib/',
         css: 'build/css/',
+        cssIE8: 'build/css/IE8/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
@@ -28,6 +29,7 @@ var path = {
         js: 'src/js/*.js',
         jsLib: 'src/js/lib/*.js',
         scss: 'src/style/main.scss',
+        cssIE8: 'src/styleIE8/cssIE8.css',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -36,6 +38,7 @@ var path = {
         js: 'src/js/*.js',
         jsLib: 'src/js/lib/*.js',
         scss: 'src/style/**/*.scss',
+        cssIE8: 'src/styleIE8/*.css',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -95,6 +98,18 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('cssIE8:build', function () {
+    gulp.src(path.src.cssIE8)
+        .pipe(plumber())
+        .pipe(cssmin({debug: true}, function(details) {
+             console.log(details.name + ': ' + details.stats.originalSize);
+             console.log(details.name + ': ' + details.stats.minifiedSize);
+         }))
+        .pipe(rename('cssIE8.min.css'))
+        .pipe(gulp.dest(path.build.cssIE8))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
@@ -117,6 +132,7 @@ gulp.task('build', [
     'jsLib:build',
     'js:build',
     'style:build',
+    'cssIE8:build',
     'fonts:build',
     'image:build'
 ]);
@@ -127,6 +143,9 @@ gulp.task('watch', function(){
     });
     gulp.watch(path.watch.scss, function(event) {
         gulp.start('style:build');
+    });
+    gulp.watch(path.watch.cssIE8, function(event) {
+        gulp.start('cssIE8:build');
     });
     gulp.watch(path.watch.js, function(event) {
         gulp.start('js:build');

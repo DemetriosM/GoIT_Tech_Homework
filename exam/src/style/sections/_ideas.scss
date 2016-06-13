@@ -1,0 +1,151 @@
+//Section IDEAS
+.section-ideas{
+    @extend .section-header;
+    padding: 15px 10px 40px;
+    
+    h3{
+        margin: 0 0 16px;
+    }
+    
+    p{
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    form{
+        margin: 18px auto 0;
+    }
+    
+    input[type="text"]{
+        display: block;
+        margin: 0 auto 10px;
+        padding: 0 15px;
+        width: 280px;
+        height: 40px;
+        border: 1px solid #ccc;
+        @include border-radius(4px);
+        @include box-shadow(0, 1px, 0, 0, #ccc);    
+    }
+    
+    input[type="submit"]{
+        display: block;
+        margin: 0 auto;
+        width: 280px;  
+        line-height: 38px; 
+        border: 2px solid #ff4e50;
+        @include border-radius(20px);
+        background-color: #ff4e50;
+        color: #fff;
+        @include transition(all, 200ms, ease-in-out);
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover{
+        background-color: #fff;
+        color: #ff4e50
+    }
+    
+}
+
+.ideas{
+    margin: 0 auto 28px;
+    width: 300px;
+}
+
+.ideas__item,
+.ideas__sizer{
+    width: 300px;
+}
+
+.ideas__item{
+    display: block;
+    margin-bottom: 10px; 
+    height: 120px;
+    line-height: 120px;
+    background: #333;
+    @include border-radius(4px);
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    overflow: hidden;
+}
+
+.ideas__item:hover{
+    opacity: 0.85;
+    color: #ff4e50;
+}
+
+@media screen and (min-width: 768px){
+    .section-ideas{
+        padding: 79px 10px 65px;
+        
+        h3{
+            margin: 0 0 35px;
+        }
+        
+        form{
+            margin: 38px auto;
+            width: 420px;
+        }
+        
+        input[type="text"]{
+            float: left;
+            margin: 0 5px 0 0;
+            width: 240px;
+        }
+        
+        input[type="submit"]{
+            width: 160px;
+        }
+    }
+    
+    .ideas{
+        margin: 0 auto 75px;
+        width: 748px;
+    }
+    
+    .ideas__item{
+        margin-bottom: 20px;        
+        height: 310px;
+        line-height: 310px;
+    }
+    
+    .ideas__item,
+    .ideas__sizer{
+        width: 236px;
+    }
+    
+    .ideas__item_big{
+        width: 492px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .section-ideas{
+        padding: 79px 10px 58px;
+
+        form{
+            margin: 41px auto;
+            width: 430px;
+        }
+        
+        input[type="text"]{
+            float: left;
+            margin: 0 0 0 16px;
+            width: 240px;
+        }
+    }
+    .ideas{
+        padding-left: 20px; 
+        width: 960px;
+    }
+    
+    .ideas__item,
+    .ideas__sizer{
+        width: 300px;
+    }
+    
+    .ideas__item_big{
+        width: 620px;
+    }
+}

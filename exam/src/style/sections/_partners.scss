@@ -1,0 +1,104 @@
+//Section PARTNERS
+.section-partners{
+    @extend .section-header;
+    padding: 0 0 20px;
+    
+    h3{
+        margin: 0 0 15px;
+    }
+}
+
+.section-partners__link{
+    @extend .promo__link;
+}
+
+.section-partners::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.partner{
+    margin: 0 auto 27px;
+    width: 220px;
+    
+    figure{
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+    
+    figcaption{
+        margin: 17px 0 14px;
+    }
+}
+
+.partner__icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 31px;
+    right: 47px;
+}
+
+.partner__icon_1{
+    background: url('../img/partners/icons.png') 0 0 no-repeat;
+}
+.partner__icon_2{
+    background: url('../img/partners/icons.png') -45px 0 no-repeat;
+}
+.partner__icon_3{
+    background: url('../img/partners/icons.png') -90px 0 no-repeat;
+}
+.partner__icon_4{
+    background: url('../img/partners/icons.png') -135px 0 no-repeat;
+}
+
+.partner__name{
+    color: #333;
+}
+
+.partner__name:hover{
+    color: #ff4e50;
+}
+
+.partner__intro{
+    line-height: 16px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 768px){
+    .section-partners{
+        margin: 0 auto;
+        padding: 63px 0 20px;
+        width: 500px;
+        
+        h3{
+            margin: 0;
+        }
+    }
+    
+    .partner{
+        margin: 28px 15px 34px;
+        float: left;
+    }
+    
+    .section-partners__link{
+        height: 40px;
+        width: 195px;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .section-partners{
+        padding: 63px 240px 20px;
+        width: 1440px;
+    }
+    
+    .partner{
+        margin: 30px 10px 39px;
+    }
+}

@@ -13,3 +13,11 @@
        -o-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin box-shadow($x, $y, $blur, $spred, $color){
+  -webkit-box-shadow: $x $y $blur $spred $color;
+     -moz-box-shadow: $x $y $blur $spred $color;
+      -ms-box-shadow: $x $y $blur $spred $color;
+       -o-box-shadow: $x $y $blur $spred $color;
+          box-shadow: $x $y $blur $spred $color;
+}

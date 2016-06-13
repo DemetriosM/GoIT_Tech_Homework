@@ -1,9 +1,12 @@
-.header{
+//HEADER
+.section-header{
     padding: 20px 0 137px;
-    background: url('../img/header.jpg') center top no-repeat;
-    background-size: cover;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 320px;
+    cursor: default;
 }   
-.header::after{
+.section-header::after{
     content: '';
     display: block;
     clear: both;
@@ -31,8 +34,8 @@
     width: 90px;
 }
 
-.authorisation__login:hover, .authorisation__login:active, .authorisation__login:focus,
-.authorisation__signup:hover, .authorisation__signup:active, .authorisation__signup:focus{
+.authorisation__login:hover,
+.authorisation__signup:hover{
     border-color: #fff;
 }
 
@@ -100,23 +103,20 @@
     background-color: transparent;
 }
 
-.promo__link:hover,
-.promo__link:focus,
-.promo__link:active{
+.promo__link:hover{
     color: #ff4e50;
 }
 
-.promo__link:hover::after,
-.promo__link:focus::after,
-.promo__link:active::after{
+.promo__link:hover::after{
     width: 0;
     opacity: 0;
 }
 
 @media screen and (min-width: 768px){
     
-    .header{
+    .section-header{
         padding: 37px 50px 233px;
+        max-width: 768px;
     }
     
     .authorisation{
@@ -159,7 +159,8 @@
 
 @media screen and (min-width: 1440px){
     
-    .header{
+    .section-header{
         padding: 37px 235px 233px 250px;
+        max-width: 1440px;
     }
 }
