@@ -10,18 +10,10 @@
                 animation: {
                   duration: 500
                 }
-            //  })
-            // .jcarouselAutoscroll({
-            //   interval: 7000,
-            //   target: '+=1',
-            //   autostart: true
     });
 
     $('.jcarousel__control-prev').jcarouselControl({
                                     target: '-=1'
-                              //   })
-                              // .on('click', function () {
-                              //   $carousel.jcarouselAutoscroll('stop');
                                   });
     $('.jcarousel__control-next').jcarouselControl({
                                     target: '+=1'
@@ -76,7 +68,7 @@
                   $ideas[i].style.background = bg;
                   $ideas[i].style.backgroundSize = '100% 100%';
                   $ideas[i].style.alt = val.tags;
-                  $ideas[i].appendChild(document.createTextNode(val.user)); 
+                  $ideas[i].appendChild(document.createTextNode(val.tags.split(',')[0])); 
                 });
               } else {
                 searchField.val('Try again');
